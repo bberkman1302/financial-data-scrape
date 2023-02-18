@@ -64,7 +64,7 @@ class pitchbook_scraper():
         driver.get('https://my.pitchbook.com/')
         username = WebDriverWait(driver, timeout=30).until(lambda d: d.find_element(By.ID, "login-page-login"))
         password = driver.find_element(By.ID, "login-page-pass")
-        username.send_keys("YOUR_EMAIL_HERE)
+        username.send_keys("YOUR_EMAIL_HERE")
         time.sleep(1)
         password.send_keys("YOUR_PASSWORD_HERE")
         time.sleep(1)
