@@ -64,9 +64,9 @@ class pitchbook_scraper():
         driver.get('https://my.pitchbook.com/')
         username = WebDriverWait(driver, timeout=30).until(lambda d: d.find_element(By.ID, "login-page-login"))
         password = driver.find_element(By.ID, "login-page-pass")
-        username.send_keys("brendan.g.berkman.24@dartmouth.edu")
+        username.send_keys("YOUR_EMAIL_HERE)
         time.sleep(1)
-        password.send_keys("C@lvindog123")
+        password.send_keys("YOUR_PASSWORD_HERE")
         time.sleep(1)
         driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
         login_button = driver.find_element(By.CLASS_NAME, "submit-button")
@@ -209,8 +209,8 @@ class pitchbook_scraper():
 
 
 
-dso_list = ["42 North Dental","7 to 7 Dental & Orthodontics","Affinity Dental Management","Affordable Care","Aspen Dental Management","Beacon Dental Health","Bright Direction Dental","Capitol Dental Care","CollectiveCare Dental","Cordental Group","Cornerstone Group","Dental365","Digital Denture + Implants","D4C Dental Brands","DecisionOne Dental Partners","Dental Associates","Dental Care Alliance","Elite Dental Partners","Endo1 Partners","Foundation Dental Partners","Great Expressions Dental Centers","Heartland Dental","Higginbotham Dental Group","Hero Practice Services","Lollipop Dental Pediatric Dentistry and Orthodontics","MB2 Dental","Mid-Atlantic Dental Partners","Mortenson Dental Partners","NAK Dental Group","New England Dental Partners","North American Dental Group","Onsite Dental","Oakpoint","OrthoDent","Pacific Dental Services","Peak Dental Services","PepperPointe Partnerships","ProHealth Dental","ProSmile","Riccobene Associates Family Dentistry","Rock Dental Brands","Select Dental Management","Signature Dental Partners","Signet Dental","Smile Brands","Southern Dental Alliance","Simply Dental Management","Swish Dental","United Dental Partners","Underbite Dental Brands","US Dental Surgery Network","Vesper Alliance","Vista Verde Dental Partners","Western Dental","Zak Dental","Allied Dental","Benevis","ClearChoice Dental Implant Centers","Midwest Dental","Apex Dental Partners","Spring Dental","Smiles West Dental & Braces","Kids First Dental","1st Choice Dental Care","Smilepoint PLLC","Children's Dental Management","Forest Family Dentistry PLLC","Cal Dental USA","Mint Condition Dental","DDS Partners Management","High Point Dentistry","Bela Family Dentistry"]
-test = pitchbook_scraper(dso_list, "http://localhost:60251", "f9ac31dd537cb6ea10d8e591da9a117f")
+company_list = ["YOUR_COMPANY_LIST_HERE"]
+test = pitchbook_scraper(company_list, "YOUR_URL_HERE", "YOUR_SERVER_ID_HERE")
 test.start()
 
     
