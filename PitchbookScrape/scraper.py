@@ -123,6 +123,7 @@ class pitchbook_scraper():
         return(value)
 
 
+
     #Grabs company valuation, if available
     def get_post_val(self, driver):
         try:
